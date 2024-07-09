@@ -1,0 +1,93 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar {
+  border-radius: 1rem;
+  background-color: var(--primary-color);
+  color: var(--main-color);
+}
+
+.circle {
+  text-align: left;
+  padding: 0.5rem;
+
+}
+
+.circle span {
+  font-size: x-small;
+}
+
+.close{
+  cursor: pointer;
+}
+
+.icon {
+  margin: 0rem 0.5rem;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.content {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.person {
+  background: rgba(136, 135, 135, 0.17);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  border: 1px solid rgba(136, 135, 135, 1);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-evenly;
+  margin: 0.4rem 0.3rem;
+}
+
+
+.person_img {
+  background: rgba(136, 135, 135, 0.17);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  border: 1px solid rgba(136, 135, 135, 0.15);
+  border-radius: 50%;
+  padding: 0.5rem 0.6rem;
+}
+
+.hidden{
+  display: none;
+}
+.main_content{
+  margin: 0 auto;
+}
+.main_content h4{
+  margin-top: 5rem;
+  background-color: aliceblue;
+  width: 20rem;
+}
+.coupons:hover{
+  color: red;
+  background-color: none;
+  border-bottom: 1px solid red ;
+
+}
+.coupons{
+  margin: 1rem;
+}
