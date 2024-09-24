@@ -12,15 +12,15 @@ import { useState } from "react";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="navbar">
-      <div className="circle">
-        <span>🔴</span>
-        <span className="close" onClick={() => setIsOpen((is) => !is)}>
+    <div className="rounded-md text-black bg-white">
+      <div className="text-left p-2 flex">
+        <span className="text-xs">🔴</span>
+        <span className="text-xs cursor-pointer" onClick={() => setIsOpen((is) => !is)}>
           🟡
         </span>
-        <span>🟢</span>
+        <span className="text-xs">🟢</span>
       </div>
-      <div className="person">
+      <div className=" person rounded-2xl items-center flex cursor-pointer justify-evenly mx-2 my-2">
         <div className="person_img">
           <span>
             <MdOutlinePersonOutline />
@@ -31,52 +31,52 @@ function Navbar() {
         </div>
       </div>
       <div className="nav-link-list">
-        <Link to="/Dashboard" className="nav-link">
-          <div>
-            <span className="icon">
+        <Link to="/Dashboard" className="flex flex-col flex-wrap items-center p-4">
+
+            <span className="mx-1">
               <RxDashboard />
             </span>
             <span className={`${isOpen ? "hidden" : ""}`}>dashboard</span>
-          </div>
+
         </Link>
-        <Link className="nav-link" to="Sales">
-          <span className="icon">
+        <Link className="flex flex-col flex-wrap items-center p-4" to="Sales">
+          <span className="mx-1">
             <LuFileLineChart />
           </span>
           <span className={`${isOpen ? "hidden" : ""}`}>Sales Insights</span>
         </Link>
-        <Link className="nav-link" to="/Coupons">
-          <span className="icon">
+        <Link className="flex flex-col flex-wrap items-center p-4" to="/Coupons">
+          <span className="mx-1">
             <RiCoupon2Line />
           </span>
           <span className={`${isOpen ? "hidden" : ""}`}>Coupons</span>
         </Link>
-        <Link className="nav-link" to="/TeamMember">
-          <span className="icon">
+        <Link className="flex flex-col flex-wrap items-center p-4" to="/TeamMember">
+          <span className="mx-1">
             <AiOutlineTeam />
           </span>
           <span className={`${isOpen ? "hidden" : ""}`}>Team Member</span>
         </Link>
-        <Link className="nav-link" to="/Messages">
-          <span className="icon">
+        <Link className="flex flex-col flex-wrap items-center p-4" to="/Messages">
+          <span className="mx-1">
             <BiMessageSquareDetail />
           </span>
           <span className={`${isOpen ? "hidden" : ""}`}>Messages</span>
         </Link>
-        <Link className="nav-link" to="/File">
-          <span className="icon">
+        <Link className="flex flex-col flex-wrap items-center p-4" to="/File">
+          <span className="mx-1">
             <IoFolderOutline />
           </span>
           <span className={`${isOpen ? "hidden" : ""}`}>File</span>
         </Link>
-        <Link className="nav-link" to="/wallet">
-          <span className="icon">
+        <Link className="flex flex-col flex-wrap items-center p-4" to="/wallet">
+          <span className="mx-1">
             <AiOutlineWallet />
           </span>
           <span className={`${isOpen ? "hidden" : ""}`}>wallet</span>
         </Link>
-        <Link className="nav-link" to="/">
-          <span className="icon">
+        <Link className="flex flex-col flex-wrap items-center p-4" to="/">
+          <span className="mx-1">
             <IoLogInOutline />
           </span>
           <span className={`${isOpen ? "hidden" : ""}`}>Logout</span>
