@@ -12,7 +12,7 @@ import { useState } from "react";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="rounded-md text-black bg-white">
+    <div className="rounded-md text-black bg-white w-80">
       <div className="text-left p-2 flex">
         <span className="text-xs">🔴</span>
         <span className="text-xs cursor-pointer" onClick={() => setIsOpen((is) => !is)}>
@@ -20,64 +20,60 @@ function Navbar() {
         </span>
         <span className="text-xs">🟢</span>
       </div>
-      <div className=" person rounded-2xl items-center flex cursor-pointer justify-evenly mx-2 my-2">
-        <div className="person_img">
-          <span>
-            <MdOutlinePersonOutline />
-          </span>
-        </div>
+      <div className="cursor-pointer mx-2 my-2 flex justify-around">
+        <span>
+          <MdOutlinePersonOutline className="w-6 h-6" />
+        </span>
         <div className="person_detail">
           <h4 className={`${isOpen ? "hidden" : ""}`}>Jimmy Smith</h4>
         </div>
       </div>
-      <div className="nav-link-list">
-        <Link to="/Dashboard" className="flex flex-col flex-wrap items-center p-4">
-
-            <span className="mx-1">
-              <RxDashboard />
-            </span>
-            <span className={`${isOpen ? "hidden" : ""}`}>dashboard</span>
-
-        </Link>
-        <Link className="flex flex-col flex-wrap items-center p-4" to="Sales">
+      <div>
+        <Link to="/Dashboard" className="p-4 flex hover:bg-indigo-500 hover:bg-opacity-25 hover:text-blue-500">
           <span className="mx-1">
-            <LuFileLineChart />
+            <RxDashboard className="w-6 h-6" />
+          </span>
+          <span className={` ${isOpen ? "hidden" : ""}`}>Dashboard</span>
+        </Link>
+        <Link className="p-4 flex hover:bg-indigo-500 hover:bg-opacity-25 hover:text-blue-500" to="Sales">
+          <span className="mx-1">
+            <LuFileLineChart className="w-6 h-6" />
           </span>
           <span className={`${isOpen ? "hidden" : ""}`}>Sales Insights</span>
         </Link>
-        <Link className="flex flex-col flex-wrap items-center p-4" to="/Coupons">
+        <Link className="p-4 flex hover:bg-indigo-500 hover:bg-opacity-25 hover:text-blue-500" to="/Coupons">
           <span className="mx-1">
-            <RiCoupon2Line />
+            <RiCoupon2Line className="w-6 h-6" />
           </span>
           <span className={`${isOpen ? "hidden" : ""}`}>Coupons</span>
         </Link>
-        <Link className="flex flex-col flex-wrap items-center p-4" to="/TeamMember">
+        <Link className="p-4 flex hover:bg-indigo-500 hover:bg-opacity-25 hover:text-blue-500" to="/TeamMember">
           <span className="mx-1">
-            <AiOutlineTeam />
+            <AiOutlineTeam className="w-6 h-6" />
           </span>
           <span className={`${isOpen ? "hidden" : ""}`}>Team Member</span>
         </Link>
-        <Link className="flex flex-col flex-wrap items-center p-4" to="/Messages">
+        <Link className="p-4 flex hover:bg-indigo-500 hover:bg-opacity-25 hover:text-blue-500" to="/Messages">
           <span className="mx-1">
-            <BiMessageSquareDetail />
+            <BiMessageSquareDetail className="w-6 h-6" />
           </span>
           <span className={`${isOpen ? "hidden" : ""}`}>Messages</span>
         </Link>
-        <Link className="flex flex-col flex-wrap items-center p-4" to="/File">
+        <Link className="p-4 flex hover:bg-indigo-500 hover:bg-opacity-25 hover:text-blue-500" to="/File">
           <span className="mx-1">
-            <IoFolderOutline />
+            <IoFolderOutline className="w-6 h-6" />
           </span>
           <span className={`${isOpen ? "hidden" : ""}`}>File</span>
         </Link>
-        <Link className="flex flex-col flex-wrap items-center p-4" to="/wallet">
+        <Link className="p-4 flex hover:bg-indigo-500 hover:bg-opacity-25 hover:text-blue-500" to="/wallet">
           <span className="mx-1">
-            <AiOutlineWallet />
+            <AiOutlineWallet className="w-6 h-6" />
           </span>
           <span className={`${isOpen ? "hidden" : ""}`}>wallet</span>
         </Link>
-        <Link className="flex flex-col flex-wrap items-center p-4" to="/">
+        <Link className="p-4 flex hover:bg-indigo-500 hover:bg-opacity-25 hover:text-blue-500" to="/">
           <span className="mx-1">
-            <IoLogInOutline />
+            <IoLogInOutline className="w-6 h-6" />
           </span>
           <span className={`${isOpen ? "hidden" : ""}`}>Logout</span>
         </Link>
