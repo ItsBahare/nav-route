@@ -62,7 +62,15 @@ function RouteNav() {
           </div>
         }
       />
-      <Route path="/wallet" element={<div className="text-center mx-auto">This is Wallet</div>} />
+      <Route
+        path="/wallet"
+        element={
+          <div className="text-center mx-auto">
+            This is Wallet
+            <BackNavigation />
+          </div>
+        }
+      />
     </Routes>
   );
 }
