@@ -1,3 +1,4 @@
+
 import "../public/build/tailwind.css";
 import Navbar from "./components/Navbar";
 import Route from "./components/RouteNav";
