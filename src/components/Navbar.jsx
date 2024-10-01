@@ -40,14 +40,14 @@ function Navbar() {
       <div>
         <Link
           to="/Dashboard"
-          className="p-4 flex hover:bg-indigo-500 hover:bg-opacity-25 hover:text-blue-500">
+          className=" p-4 sm:flex-row flex flex-col items-center  hover:bg-indigo-500 hover:bg-opacity-25 hover:text-blue-500">
           <span className="mx-1">
             <RxDashboard className="w-6 h-6" />
           </span>
           <span className={` ${isOpen ? "hidden" : "font-medium"}`}>Dashboard</span>
         </Link>
         <Link
-          className="p-4 flex hover:bg-indigo-500 hover:bg-opacity-25 hover:text-blue-500"
+          className="p-4 flex sm:flex-row  flex-col items-center hover:bg-indigo-500 hover:bg-opacity-25 hover:text-blue-500"
           to="Sales">
           <span className="mx-1">
             <LuFileLineChart className="w-6 h-6" />
@@ -55,7 +55,7 @@ function Navbar() {
           <span className={`${isOpen ? "hidden" : "font-medium"}`}>Sales Insights</span>
         </Link>
         <Link
-          className="p-4 flex hover:bg-indigo-500 hover:bg-opacity-25 hover:text-blue-500"
+          className="p-4 sm:flex-row  flex-col items-center flex hover:bg-indigo-500 hover:bg-opacity-25 hover:text-blue-500"
           to="/Coupons">
           <span className="mx-1">
             <RiCoupon2Line className="w-6 h-6" />
@@ -63,7 +63,7 @@ function Navbar() {
           <span className={`${isOpen ? "hidden" : "font-medium"}`}>Coupons</span>
         </Link>
         <Link
-          className="p-4 flex hover:bg-indigo-500 hover:bg-opacity-25 hover:text-blue-500"
+          className="p-4 sm:flex-row flex flex-col items-center hover:bg-indigo-500 hover:bg-opacity-25 hover:text-blue-500"
           to="/TeamMember">
           <span className="mx-1">
             <AiOutlineTeam className="w-6 h-6" />
@@ -71,7 +71,7 @@ function Navbar() {
           <span className={`${isOpen ? "hidden" : "font-medium"}`}>Team Member</span>
         </Link>
         <Link
-          className="p-4 flex hover:bg-indigo-500 hover:bg-opacity-25 hover:text-blue-500"
+          className="p-4 sm:flex-row flex flex-col items-center hover:bg-indigo-500 hover:bg-opacity-25 hover:text-blue-500"
           to="/Messages">
           <span className="mx-1">
             <BiMessageSquareDetail className="w-6 h-6" />
@@ -79,7 +79,7 @@ function Navbar() {
           <span className={`${isOpen ? "hidden" : "font-medium"}`}>Messages</span>
         </Link>
         <Link
-          className="p-4 flex hover:bg-indigo-500 hover:bg-opacity-25 hover:text-blue-500"
+          className="p-4 sm:flex-row flex flex-col items-center hover:bg-indigo-500 hover:bg-opacity-25 hover:text-blue-500"
           to="/File">
           <span className="mx-1">
             <IoFolderOutline className="w-6 h-6" />
@@ -87,7 +87,7 @@ function Navbar() {
           <span className={`${isOpen ? "hidden" : "font-medium"}`}>File</span>
         </Link>
         <Link
-          className="p-4 flex hover:bg-indigo-500 hover:bg-opacity-25 hover:text-blue-500"
+          className="p-4 sm:flex-row flex flex-col items-center hover:bg-indigo-500 hover:bg-opacity-25 hover:text-blue-500"
           to="/wallet">
           <span className="mx-1">
             <AiOutlineWallet className="w-6 h-6" />
@@ -95,7 +95,7 @@ function Navbar() {
           <span className={`${isOpen ? "hidden" : "font-medium"}`}>wallet</span>
         </Link>
         <Link
-          className="p-4 flex hover:bg-indigo-500 hover:bg-opacity-25 hover:text-blue-500"
+          className="p-4 sm:flex-row flex flex-col items-center hover:bg-indigo-500 hover:bg-opacity-25 hover:text-blue-500"
           to="/">
           <span className="mx-1">
             <IoLogInOutline className="w-6 h-6" />
