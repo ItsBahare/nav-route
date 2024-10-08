@@ -4,11 +4,12 @@ import { AiOutlineTeam, AiOutlineWallet } from "react-icons/ai";
 import { IoFolderOutline, IoLogInOutline } from "react-icons/io5";
 import { BiMessageSquareDetail } from "react-icons/bi";
 import { RiCoupon2Line } from "react-icons/ri";
-import { MdOutlinePersonOutline } from "react-icons/md";
+// import { MdOutlinePersonOutline } from "react-icons/md";
 import { CiCircleChevDown } from "react-icons/ci";
 import { RxDashboard } from "react-icons/rx";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import person from "../image/person.jpg"
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,12 +23,10 @@ function Navbar() {
         <span className="text-xs">🟢</span>
       </div>
       <div
-        className={` ${isOpen ? "" : "border border-indigo-200 bg-opacity-25 "} justify-around cursor-pointer mx-2 my-2 flex  items-center`}>
-        <span className="border border-indigo-200 bg-opacity-25 rounded-full p-2">
-          <MdOutlinePersonOutline className="w-6 h-7 " />
-        </span>
-        <div className="flex p-1 items-center">
-          <h4 className={`${isOpen ? "hidden" : "font-medium"}`}>Jimmy Smith</h4>
+        className={` ${isOpen ? "" : "border border-indigo-200 bg-opacity-25 "} justify-around cursor-pointer mx-2 my-2 flex items-center flex-col sm:flex-row`}>
+          <img src={person} alt="person" className="rounded-full w-14"/>
+        <div className="flex p-1 items-center flex-col sm:flex-row">
+          <h4 className={`${isOpen ? "hidden" : "font-medium"}`}>Sara Smith</h4>
           {isOpen ? (
             ""
           ) : (
